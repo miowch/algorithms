@@ -81,7 +81,7 @@ def find_the_key_while_loop(box):
     return "There's no key in the box."
 
 
-# 2nd approach with while loop
+# 2nd approach with recursion
 def find_the_key_recursion(box):
 
     def is_key(item):
