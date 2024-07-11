@@ -1,3 +1,4 @@
+import math
 """
 1.1 Suppose you have a sorted list of 128 names, and you’re searching through it using binary search.
 What’s the maximum number of steps it would take?
@@ -17,8 +18,4 @@ Answer: 8 steps
 
 
 def count_max_steps_binary_search(n):
-    max_steps = 0
-    while n != 1:
-        n = n / 2
-        max_steps += 1
-    return max_steps
+    return math.log(n, 2)
